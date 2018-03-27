@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>MesaController</servlet-name>
+  	<display-name>MesaController</display-name>
+  	<description></description>
+  	<servlet-class>com.ipartek.formacion.nidea.controller.MesaController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CalculadoraController</servlet-name>
+  	<display-name>CalculadoraController</display-name>
+  	<description></description>
+  	<servlet-class>com.ipartek.formacion.nidea.controller.CalculadoraController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CalculatorContr</servlet-name>
+  	<display-name>CalculatorContr</display-name>
+  	<description></description>
+  	<servlet-class>com.ipartek.formacion.nidea.controller.CalculatorContr</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginControll</servlet-name>
+  	<display-name>LoginControll</display-name>
+  	<description></description>
+  	<servlet-class>com.ipartek.formacion.nidea.controller.LoginControll</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MesaController</servlet-name>
+  	<url-pattern>/generar-mesa</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CalculadoraController</servlet-name>
+  	<url-pattern>/CalculadoraController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CalculatorContr</servlet-name>
+  	<url-pattern>/calculator</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginControll</servlet-name>
+  	<url-pattern>/LoginControll</url-pattern>
+  </servlet-mapping>
+</web-app>
