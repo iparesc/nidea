@@ -7,10 +7,9 @@
             
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="generar-mesa">Mesa</a>        
-        <a class="p-2 text-dark" href="calculator"> Calculadora</a>
-        <a class="p-2 text-dark" href="login">Login</a>     
+        <a class="p-2 text-dark" href="calculator"> Calculadora</a>     
       </nav>
-      <a class="btn btn-outline-primary" href="#">Login</a>
+      <a class="btn btn-outline-primary" href="login">Login</a>
     </div>
     
     <div class="container">
