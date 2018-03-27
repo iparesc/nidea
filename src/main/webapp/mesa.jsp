@@ -1,3 +1,5 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="com.ipartek.formacion.nidea.pojo.Material"%>
 <%@page import="com.ipartek.formacion.nidea.pojo.Mesa"%>
 
 <jsp:include page="templates/head.jsp"></jsp:include>
@@ -7,9 +9,7 @@
 <%
 	// recoger atributo del controlador, si es que existe
 	Mesa mesa = (Mesa)request.getAttribute("mesa");
-	String[] materiales = (String[])request.getAttribute("materiales");
-	int[] materialesCodigo = (int[])request.getAttribute("materialesCodigo");
-	
+	ArrayList<Material> materiales = (ArrayList<Material>)request.getAttribute("materiales");	
 %>
 
 
@@ -34,10 +34,14 @@
 		<div class="form-group row">
 			<label for="material" class="col-sm-4 col-form-label">Selecciona Material:</label>
 			<select name="material" class="col-sm-6  form-control">
-				<% for ( int i=0; i < materiales.length; i++ ) { %>
-					<option value="<%=materialesCodigo[i]%>" 
-					        <%=(mesa.getMaterial().getId()==materialesCodigo[i])?"selected":""%>>
-						<%=materiales[i]%>
+				<% 
+					Material m = null;
+					for ( int i=0; i < materiales.size(); i++ ) {
+						m = materiales.get(i);
+				%>
+					<option value="<%=m.getId()%>" 
+					        <%=(mesa.getMaterial().getId() == m.getId())?"selected":""%>>
+						<%=m.getNombre()%> - <%=m.getPrecio()%>&euro;
 					</option>
 				<% } %>
 			</select>

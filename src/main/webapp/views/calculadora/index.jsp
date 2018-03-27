@@ -5,7 +5,7 @@
 <jsp:include page="/templates/navbar.jsp"></jsp:include>
 <jsp:include page="/templates/alert.jsp"></jsp:include>
 
-<form action="calculadora" method="post">
+<form action="calculator" method="post">
 
 	<div class="form-group">
 		<label for="num1">1º Numero</label> 

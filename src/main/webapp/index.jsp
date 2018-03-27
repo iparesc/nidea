@@ -12,6 +12,7 @@
 <p><%=hora %></p>	
 <a href="generar-mesa">¿Quieres comprar una mesa?</a>
 <a href="calculator">Calculadora</a>	
+<a href="login">Login</a>
 <jsp:include page="templates/footer.jsp"></jsp:include>
 
 
